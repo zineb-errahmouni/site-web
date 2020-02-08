@@ -33,7 +33,6 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { PortfolioCarouselComponent } from './portfolio-carousel/portfolio-carousel.component';
 import { TestimonialsCarouselComponent } from './testimonials-carousel/testimonials-carousel.component';
 import { ServicesCarouselComponent } from './services-carousel/services-carousel.component';
-import { AllSectionsComponent } from './all-sections.component';
 
 import { WINDOW_PROVIDERS } from '../../shared/helpers/window.helper';
 
@@ -69,8 +68,7 @@ import { SharedComponentsModule } from 'app/shared/components/shared-components.
     TestimonialsComponent, 
     PortfolioCarouselComponent,  
     TestimonialsCarouselComponent, 
-    ServicesCarouselComponent, 
-    AllSectionsComponent
+    ServicesCarouselComponent
   ],
   providers: [WINDOW_PROVIDERS]
 
