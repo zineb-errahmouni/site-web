@@ -19,8 +19,7 @@ import { NguCarouselModule } from '@ngu/carousel';
 import { SharedModule } from '../../shared/shared.module';
 import { HomeRoutes } from "./home.routing";
 
-import { HomeOneComponent } from './home-one.component';
-import { HomeTwoComponent } from './home-two.component';
+import { HomeComponent } from './home.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroOneComponent } from './intro-one/intro-one.component';
 import { IntroTwoComponent } from './intro-two/intro-two.component';
@@ -57,8 +56,7 @@ import { SharedComponentsModule } from 'app/shared/components/shared-components.
     RouterModule.forChild(HomeRoutes)
   ],
   declarations: [
-    HomeOneComponent,
-    HomeTwoComponent, 
+    HomeComponent,
     HeaderComponent, 
     IntroOneComponent,
     IntroTwoComponent, 
