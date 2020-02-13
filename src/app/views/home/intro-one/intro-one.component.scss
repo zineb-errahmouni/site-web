@@ -1,5 +1,5 @@
 .home-intro-section {
-  background: url('../../../../assets/images/home-bg.jpg') no-repeat center center;
+  background: url('../../../../assets/images/home.svg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,6 +9,7 @@
   overflow: hidden
 }
 .home-intro-title {
+  color: #4BAECA;
   margin: 0 0 24px;
   font-size: 48px;
   font-weight: 900;
@@ -20,9 +21,11 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
+  color:#404B90;
 }
 .intro-list {
   margin: 0 0 40px;
+  color:#404B90;
 }
 .intro-product {
   position: relative;
