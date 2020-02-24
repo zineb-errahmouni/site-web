@@ -12,6 +12,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   <app-pricings></app-pricings>
   <app-contact [backgroundGray]="true"></app-contact>
   <app-footer></app-footer>
+    <app-chat-dialog></app-chat-dialog>
   </div>`
 })
 export class HomeComponent implements OnInit, OnDestroy {
@@ -22,6 +23,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy() {
   }
-  
+
 
 }

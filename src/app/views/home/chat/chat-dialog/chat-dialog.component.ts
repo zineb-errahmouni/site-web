@@ -6,14 +6,17 @@ import { scan } from 'rxjs/operators';
 @Component({
   selector: 'app-chat-dialog',
   templateUrl: './chat-dialog.component.html',
+  providers : [ChatService],
   styleUrls: ['./chat-dialog.component.css']
 })
-export class ChatDialogComponent implements OnInit {
+export class ChabotDialogComponent implements OnInit {
 
   messages: Observable<Message[]>;
   val: string;
 
+
   constructor(private chat: ChatService) { }
+
 
   ngOnInit(): void {
    this.messages = this.chat.conversation.asObservable()

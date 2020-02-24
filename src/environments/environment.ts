@@ -5,5 +5,8 @@
 
 export const environment = {
   production: false,
-  apiURL: 'developmentApi'
+  apiURL: 'developmentApi',
+  dialogFlow : {
+    angularBot : '547820d74f744dc7adcca357706b8a9c'
+  }
 };

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { 
+import {
   MatIconModule,
   MatCardModule,
   MatMenuModule,
@@ -39,6 +39,8 @@ import { WINDOW_PROVIDERS } from '../../shared/helpers/window.helper';
 import { SharedMaterialModule } from 'app/shared/shared-material.module';
 import { SharedDirectivesModule } from 'app/shared/directives/shared-directives.module';
 import { SharedComponentsModule } from 'app/shared/components/shared-components.module';
+import {ChabotDialogComponent} from './chat/chat-dialog/chat-dialog.component';
+import {NbChatModule, NbThemeModule} from '@nebular/theme';
 
 
 @NgModule({
@@ -52,23 +54,27 @@ import { SharedComponentsModule } from 'app/shared/components/shared-components.
     SharedMaterialModule,
     FlexLayoutModule,
     NguCarouselModule,
-    RouterModule.forChild(HomeRoutes)
+    NbChatModule,
+    RouterModule.forChild(HomeRoutes),
+    NbThemeModule.forRoot({ name: 'default' }),
+    NbChatModule.forRoot({ messageGoogleMapKey: 'MAP_KEY' })
   ],
   declarations: [
     HomeComponent,
-    HeaderComponent, 
+    HeaderComponent,
     IntroOneComponent,
-    IntroTwoComponent, 
-    PortfolioComponent, 
-    ServicesComponent, 
-    CtaComponent, 
-    PricingsComponent, 
-    ContactComponent, 
-    FooterComponent, 
-    TestimonialsComponent, 
-    PortfolioCarouselComponent,  
-    TestimonialsCarouselComponent, 
-    ServicesCarouselComponent
+    IntroTwoComponent,
+    PortfolioComponent,
+    ServicesComponent,
+    CtaComponent,
+    PricingsComponent,
+    ContactComponent,
+    FooterComponent,
+    TestimonialsComponent,
+    PortfolioCarouselComponent,
+    TestimonialsCarouselComponent,
+    ServicesCarouselComponent,
+    ChabotDialogComponent
   ],
   providers: [WINDOW_PROVIDERS]
 

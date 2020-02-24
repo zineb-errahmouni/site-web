@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {ChabotDialogComponent} from './chat-dialog.component';
 
-import { ChatDialogComponent } from './chat-dialog.component';
 
 describe('ChatDialogComponent', () => {
-  let component: ChatDialogComponent;
-  let fixture: ComponentFixture<ChatDialogComponent>;
+  let component: ChabotDialogComponent;
+  let fixture: ComponentFixture<ChabotDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChatDialogComponent ]
+      declarations: [ ChabotDialogComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChatDialogComponent);
+    fixture = TestBed.createComponent(ChabotDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
