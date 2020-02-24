@@ -1,0 +1,40 @@
+<p>My First Bot</p>
+<!--<div class="chat-component">-->
+<!--  <div class="chat-viewport">-->
+<!--    <div class="chat-messages">-->
+<!--      <div class="modal-header py-1">-->
+<!--        <h6 class="modal-title"><img src="../../../assets/images/bot.svg" style="-->
+<!--    width: 20%;"/></h6>-->
+<!--        <button mat-fab color="primary">Primary-->
+
+<!--        <span aria-hidden="true">&times;</span>-->
+
+<!--        </button>-->
+<!--      </div>-->
+<!--      <ng-container *ngFor="let message of messages | async">-->
+<!--        <div class="message" [ngClass]="{'from' : message.sentBy === 'bot', 'to': message.sentBy === 'user'}">-->
+<!--          <img src="../../../assets/images/bot.svg" style="width: 20%;" /> {{message.content}}-->
+<!--        </div>-->
+<!--      </ng-container>-->
+<!--    </div>-->
+
+<!--  </div>-->
+<!--  <div class="input-group send">-->
+<!--    <input [(ngModel)]="val" (keyup.enter)="sendMessage()" type="text" placeholder="Message"/>-->
+<!--    <div class="input-group-append">-->
+<!--      <button type="button" class="btn btn-primary" (click)="sendMessage()"><i class="fas fa-paper-plane"></i></button>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <button class="btn btn-secondary show-chat" (click)="sendMessage()"><i class="fas fa-times"></i></button>-->
+
+<nb-chat title="Jake" size="medium" status="warning" >
+    <nb-chat-message *ngFor="let message of messages | async"
+                     [message]="message.content"
+        >
+    </nb-chat-message>
+    <nb-chat-form (send)="sendMessage()" [dropFiles]="true">
+    </nb-chat-form>
+
+</nb-chat>
+<!--</div>-->
+
